@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title> I am Sriya</title>
+    <!-- <link rel="stylesheet" type="text/css" href="main.css"/> Includeing external style sheet -->
+    <style type="text/css">
+        .test{
+            font-size:20pt;
+            color:red;
+            font-style: italic;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            document.getElementById("name").value = "Sriya";
+        })
+    </script>
+
+</head>
+<body>
+    <!-- conntent body -->
+<!--    {{message}}-->
+    <ul>
+    {% for item in message %}
+    <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+    <form action="submit" method="post" type="form">
+        <div>
+            <span class="test">there!, please register here</span>
+
+            <input type="text" id="name" name="name" alt="name">
+
+            <input type="text" name="age">
+            <input type="submit" name="submit">
+        </div>
+    </form>
+</body>
+</html>
